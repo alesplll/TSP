@@ -12,18 +12,14 @@ def main():
     if st.button("Process Text"):
         sentences = extract_sentences(text)
 
-        st.subheader("Extracted Sentences:")
-        for s in sentences:
-            st.write(s)
-
-        st.subheader("Semantic Parts (first 5 words of each sentence):")
+        st.subheader("Semantic Parts:")
         for s in sentences:
             parts = extract_semantic_parts(s)
             st.write(parts)
 
-        st.subheader("Table (Words in each sentence):")
+        st.subheader("Table:")
         table = build_table(sentences)
-        st.table(table)
+        st.dataframe(table, use_container_width=True)
 
 
 if __name__ == '__main__':

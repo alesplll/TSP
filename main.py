@@ -1,8 +1,5 @@
-# LANGUAGE: python
-
 import spacy
 
-# Загрузка модели для русского языка (анализ предложений и зависимостей)
 nlp = spacy.load("ru_core_news_md")
 
 

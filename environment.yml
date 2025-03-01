@@ -1,14 +1,8 @@
-name: task6_env
+name: tsp_env
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9
+  - python=3.11
   - spacy
-  - pytorch
-  - torchvision
-  - torchaudio
-  - sentence-transformers
-  - pip
-  - pip:
-      - sentence-transformers
+  - streamlit

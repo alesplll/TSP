@@ -14,7 +14,7 @@ The project is split into several files:
 
    ```bash
    conda env create -f environment.yml
-   conda activate task6_env
+   conda activate tsp_env
    ```
 
 2. Install the spaCy Russian model:
